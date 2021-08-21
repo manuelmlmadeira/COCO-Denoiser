@@ -11,7 +11,7 @@ We provide code both for **Matlab** and **Python**. Python is used to run the ex
   - *vecnorm_local.m* or *vecnorm.m* - vectorwise norm of a matrix, along dimension d
   - *FDPG.m* - runs the Fast Dual Proximal Gradient method
   - *DualFunctionEval.m* - auxiliary function to FDPG.m, allows to Evaluate the Dual Function for a given s (dual variable).
-  - *quad_func* - for a given x, computes $0.5 x^T A  x - b^T x$ (which is the objective function).
+  - *quad_func* - for a given x, computes: 0.5 x^T A  x - b^T x (which is the objective function).
   - *COCO_Denoiser* - Runs the proposed COCO Denoiser method, which allows the denoising of the oracle gradient estimates.
 
 #### SUB-FOLDERS:
