@@ -31,7 +31,7 @@ We provide code both for **Matlab** and **Python**. Python is used to run the ex
 
 ## Python Folder:
 
-- *fourclass* and *mushrooms* are the two dataset considered.
+- *fourclass* and *mushrooms* are the two dataset considered (obtained from [here](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/)).
 - *Streaming Stochastic Fourclass.ipynb* and *Streaming Stochastic Mushrooms.ipynb* are two Jupiter notebooks which run the algorithms and provide the plots required to obtain Figure 5.
-- *stochastic_methods.py* is where the different algorithms considered are stored.
+- *stochastic_methods.py* is where the different algorithms considered are stored. In this file you can find the COCO Denoiser python implementation.
 - *logisitic_linear.py* allows to build the logistic regression problem from the design matrix and labels.
