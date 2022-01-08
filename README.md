@@ -31,7 +31,17 @@ We provide code both for **Matlab** and **Python**. Python is used to run the ex
 
 ## Python Folder:
 
+####(TLDR: COCO Denoiser python implementation can be found in stochastic_methods.py)
+
 - *fourclass* and *mushrooms* are the two dataset considered (obtained from [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/)).
-- *Streaming Stochastic Fourclass.ipynb* and *Streaming Stochastic Mushrooms.ipynb* are two Jupiter notebooks which run the algorithms and provide the plots required to obtain Figure 5.
-- *stochastic_methods.py* is where the different algorithms considered are stored. In this file you can find the COCO Denoiser python implementation.
+- *streaming_stochastic.py* is the script used to obtain the plots from Figure 5. It runs the three baseline algorithms 
+(SGD, Adam and STRSAGA) both in their vanilla and COCO plug-in versions. The initialization used for the *fourclass* 
+datasets is the one provided by default in the file. For *mushrooms*, the initialization used is almost the same, with
+the minor modifications being commented in front of the respective variables.
+- *stochastic_methods.py* is where the different algorithms considered are stored. It is in this file you can find the 
+**COCO Denoiser python implementation**. In this implementation, you can either choose to use *cvxpy* to solve the COCO 
+optimization problem or take advantage of the FDPG based approach (the computation time is clearly noticeable). Besides,
+you can find the three baseline algorithms implementation in their vanilla and COCO plug-in versions.
+- *utils.py* is the file where you can find the functions that allow to obtain initialization variables, run the 
+different methods and plot their performance in the plots shown in the paper.
 - *logisitic_linear.py* allows to build the logistic regression problem from the design matrix and labels.
