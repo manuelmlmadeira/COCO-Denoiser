@@ -31,7 +31,7 @@ We provide code both for **Matlab** and **Python**. Python is used to run the ex
 
 ## Python Folder:
 
-####(TLDR: COCO Denoiser python implementation can be found in stochastic_methods.py)
+###(TLDR: COCO Denoiser python implementation can be found in stochastic_methods.py)
 
 - *fourclass* and *mushrooms* are the two dataset considered (obtained from [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/)).
 - *streaming_stochastic.py* is the script used to obtain the plots from Figure 5. It runs the three baseline algorithms 
